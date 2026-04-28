@@ -1,0 +1,11 @@
+D:\Work\E-commerce Web App\backend\ECommerce.Application\bin\Debug\net9.0\ECommerce.Application.deps.json
+D:\Work\E-commerce Web App\backend\ECommerce.Application\bin\Debug\net9.0\ECommerce.Application.dll
+D:\Work\E-commerce Web App\backend\ECommerce.Application\bin\Debug\net9.0\ECommerce.Application.pdb
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ECommerce.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ECommerce.Application.AssemblyInfoInputs.cache
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ECommerce.Application.AssemblyInfo.cs
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ECommerce.Application.csproj.CoreCompileInputs.cache
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ECommerce.Application.dll
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\refint\ECommerce.Application.dll
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ECommerce.Application.pdb
+D:\Work\E-commerce Web App\backend\ECommerce.Application\obj\Debug\net9.0\ref\ECommerce.Application.dll
