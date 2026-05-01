@@ -1,6 +1,64 @@
-@ECommerce.API_HostAddress = http://localhost:5194
-
-GET {{ECommerce.API_HostAddress}}/weatherforecast/
-Accept: application/json
+@ECommerce.API_HostAddress = http://localhost:5153
+@Token = paste-token-here
 
 ###
+POST {{ECommerce.API_HostAddress}}/api/auth/register
+Content-Type: application/json
+
+{
+  "firstName": "Admin",
+  "lastName": "User",
+  "email": "admin@example.com",
+  "password": "Password123!",
+  "phoneNumber": "+15555550100",
+  "role": "Admin"
+}
+
+###
+POST {{ECommerce.API_HostAddress}}/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "admin@example.com",
+  "password": "Password123!"
+}
+
+###
+GET {{ECommerce.API_HostAddress}}/api/admin/dashboard
+Authorization: Bearer {{Token}}
+
+###
+GET {{ECommerce.API_HostAddress}}/api/categories
+
+###
+POST {{ECommerce.API_HostAddress}}/api/categories
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "name": "Electronics",
+  "description": "Devices, accessories, and electronic products"
+}
+
+###
+GET {{ECommerce.API_HostAddress}}/api/products?pageNumber=1&pageSize=10
+
+###
+GET {{ECommerce.API_HostAddress}}/api/products/category/1?pageNumber=1&pageSize=10
+
+###
+GET {{ECommerce.API_HostAddress}}/api/products/search?keyword=phone&pageNumber=1&pageSize=10
+
+###
+POST {{ECommerce.API_HostAddress}}/api/products
+Authorization: Bearer {{Token}}
+Content-Type: application/json
+
+{
+  "name": "Smartphone",
+  "description": "A modern smartphone with 128GB storage",
+  "price": 49999.00,
+  "stockQuantity": 25,
+  "categoryId": 1,
+  "imageUrl": "https://example.com/images/smartphone.jpg"
+}
